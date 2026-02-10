@@ -30,7 +30,7 @@ p{
     font-style: italic;
 }
 
-nav{
+#heading{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -82,13 +82,18 @@ li a{
 }
 
 
-#boxcontainer{
+#boxcontainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100vh;
-    background-image: url(https://im.hunt.in/cg/City-Guide/about-bangalore.jpg);
+
+    background-image: url("https://im.hunt.in/cg/City-Guide/about-bangalore.jpg");
+    background-size: cover;        /* Makes image fill screen */
+    background-position: center;   /* Keeps image centered */
+    background-repeat: no-repeat;  /* Prevents repeating */
 }
+
 
 #box{
     width: 400px;
@@ -100,9 +105,10 @@ li a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: ;
 }
 
-
+    
 #container2{
     display: flex;
     justify-content: space-around;
@@ -139,4 +145,20 @@ li a{
 
 #img1{
     height: 70%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav{
+        flex-direction: column;
+    }
+
+    ul{
+        flex-direction: column;
+    }
+
+    #container{
+        flex-direction: column;
+    }
+    
 }
